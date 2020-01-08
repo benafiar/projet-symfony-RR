@@ -20,7 +20,7 @@ class AccountController extends Controller
         $this->entityManager = $entityManager;
     }
     /**
-     * Permet d'afficher et de gérer le formulaire de connexion
+     * 
      * 
      * @Route("/login", name="account_login")
      * 
@@ -46,7 +46,7 @@ class AccountController extends Controller
       
     }
     /**
-     * Permet d'afficher le formulaire d'inscription
+     * 
      *
      * @Route("/register", name="account_register")
      * 
@@ -73,7 +73,7 @@ class AccountController extends Controller
     }
     
     /**
-     * Permet d'afficher la liste des réservations faites par l'utilisateur
+     * 
      *
      * @Route("/account/bookings", name="account_bookings")
      * 
