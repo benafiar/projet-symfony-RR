@@ -91,7 +91,6 @@ class Ad
         }
     }
     /**
-     * Permet de récupérer le commentaire d'un auteur par rapport à une annonce
      *
      * @param User $author
      * @return Comment|null
@@ -103,7 +102,6 @@ class Ad
         return null;
     }
     /**
-     * Permet d'obtenir la moyenne globale des notes pour cette annonce
      *
      * @return float
      */
@@ -117,7 +115,6 @@ class Ad
         return 0;
     }
     /**
-     * Permet d'obtenir un tableau des jours qui ne sont pas disponibles pour cette annonce
      *
      * @return array Un tableau d'objets DateTime représentant les jours d'occupation
      */
@@ -277,7 +274,7 @@ class Ad
     {
         if ($this->comments->contains($comment)) {
             $this->comments->removeElement($comment);
-            // set the owning side to null (unless already changed)
+   
             if ($comment->getAd() === $this) {
                 $comment->setAd(null);
             }
