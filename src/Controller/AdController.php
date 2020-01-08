@@ -20,7 +20,7 @@ class AdController extends Controller
     }
     
     /**
-     * Permet d'afficher une seule annonce
+     *
      *
      * @Route("/ads/{slug}", name="ads_show")
      * 
